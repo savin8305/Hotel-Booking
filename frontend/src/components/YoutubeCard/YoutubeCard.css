@@ -1,0 +1,31 @@
+
+img {
+  width: inherit;
+  -webkit-border-radius: 35px !important;
+  border-radius: 35px !important;
+  background: #333333 !important;
+  -webkit-box-shadow: 5px 5px 0px #665f5f, -5px -5px 0px #ffffff !important;
+  box-shadow: 5px 5px 0px #665f5f, -5px -5px 0px #ffffff !important;
+  animation: scrollPop 0.8s ease-in infinite alternate !important;
+
+}
+
+.youtubeCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (max-width: 600px) {
+  .youtubeCard {
+    width: 200px;
+  }
+}
+.Cont2{
+ margin-top: -4rem !important;
+margin-left:3rem !important;
+float: left;
+}
+.next{
+  margin-left: -10rem !important;
+  width:450px !important;
+}

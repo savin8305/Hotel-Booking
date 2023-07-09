@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#f3eded;
+    --light-color:#777;
+    --bg-color:#333333;
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:.4rem .4rem 1rem #474747,
+                -.4rem -.4rem 1rem #333333;
+    --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
+                      -.4rem -.4rem 1rem #fff inset;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-color);
+   
+}
+
+body.active{
+    --black:#fff;
+    --light-color:#ddd;
+    --bg-color:#222;
+    --border:.1rem solid rgba(0,0,0,.4);
+    --box-shadow:.4rem .4rem 1rem #111,
+                -.4rem -.4rem 1rem #333;
+    --box-shadow-inset:.4rem .4rem 1rem #111 inset,
+                      -.4rem -.4rem 1rem #333 inset;
+}
+.heading{
+  text-align: center;
+  font-size: 5rem;
+  color:var(--black);
+  text-transform: uppercase;
+  padding-bottom: 2rem;  background-color: #333333 !important;
+
+}
+
+.heading span{
+  color:var(--green);
+  text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:1rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background: none;
+    color:var(--black);
+    box-shadow: var(--box-shadow);
+}
+
+.btn:hover{
+    box-shadow: var(--box-shadow-inset);
+    color:var(--green);
+}
+
+.about1 {
+  background-color: #333333 !important;
+  min-height: 100vh;
+  display: flex;
+  mask-type: 10rem;
+  margin-left: 2rem;
+margin-right: 2rem;
+}
+
+
+.aboutAvatar {
+  background-color: #333333 !important;
+  width: 300px;
+  height: 300px;
+  margin-top: 10rem;
+  border-radius: 100%;
+  transition: all 1s;
+  margin-left: 48rem;
+  margin-bottom: 5rem;
+  transform: translateX(-100vw);
+  animation: contactFormInputs 1s ease-in-out forwards 0.5s;}
+.aboutAvatar img{
+ height: 100%;
+ width: 100%;
+ border-radius: 100%;
+ animation: contactFormTransition 2s linear forwards;
+
+}
+
+.aboutAvatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
+}
+
+@media screen and (max-width: 605px) {
+ 
+  .aboutAvatar {
+
+    width: 100px;
+    height: 100px;
+    transform: translateY(-80%);
+     margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .aboutAvatar img{
+    border-radius: 100%;
+    height: 100%;
+    margin-left: -4rem;
+  }
+ 
+ .contact1>Button{
+  margin-top:5rem;
+  margin-bottom: 5rem;
+ }
+
+  
+}
+
+@media screen and (max-width: 1100px) {
+ 
+  .aboutAvatar {
+
+    width: 100px;
+    height: 100px;
+    transform: translateY(-80%);
+    margin-left: 50rem;
+    margin-top: 5rem;
+  }
+  .aboutAvatar img{
+    border-radius: 100%;
+    height: 100%;
+
+  }
+ 
+ .contact1>Button{
+  margin-top:5rem;
+  margin-bottom: 5rem;
+ }
+
+  
+}
+section{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+@media screen and (max-width: 900px) {
+ 
+  .aboutAvatar {
+
+    width: 100px;
+    height: 100px;
+    transform: translateY(-80%);
+    margin-left: 30rem;
+    margin-top: 5rem;
+  }
+  .aboutAvatar img{
+    border-radius: 100%;
+    height: 100%;
+
+  }
+ 
+ .contact1>Button{
+  margin-top:5rem;
+  margin-bottom: 5rem;
+ }
+
+  
+}
+@media screen and (max-width:415px) {
+ 
+  .aboutAvatar {
+
+    width: 100px;
+    height: 100px;
+    transform: translateY(-80%);
+    margin-left: 19rem;
+   
+    margin-top: 5rem;
+  }
+  .aboutAvatar img{
+    border-radius: 100%;
+    height: 100%;
+
+  }
+ 
+ .contact1>Button{
+  margin-top:5rem;
+  margin-bottom: 5rem;
+ }
+
+  
+}
+@media screen and (max-width:400px) {
+ 
+  .aboutAvatar {
+
+    width: 100px;
+    height: 100px;
+    transform: translateY(-80%);
+    margin-left: 18rem;
+   
+    margin-top: 5rem;
+  }
+  .aboutAvatar img{
+    border-radius: 100%;
+    height: 100%;
+
+  }
+ 
+ .contact1>Button{
+  margin-top:5rem;
+  margin-bottom: 5rem;
+ }
+
+  
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap:2rem;
+
+}
+
+.about .row .box-container{
+  flex:1 1 40rem;
+  display: flex;
+  gap:1.5rem;
+  flex-wrap: wrap;
+}
+
+.about .row .box-container .box{
+  flex:1 1 18rem;
+  text-align: center;
+  padding:2rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.about .row .box-container .box h3{
+  font-size: 5rem;
+  color:var(--black);
+  line-height: 1.1;
+}
+
+.about .row .box-container .box p{
+  font-size: 1.7rem;
+  color:var(--light-color);
+  padding:.5rem 0;
+}
+
+.about .row .content{
+  flex:1 1 40rem;
+
+}
+
+.about .row .content h3{
+  font-size: 3.5rem;
+  color:var(--black);
+  line-height: 1.8;
+}
+
+.about .row .content h3 span{
+  color:var(--green);
+
+}
+
+.about .row .content p{
+  font-size: 1.7rem;
+  color:var(--light-color);
+  line-height: 1.8;
+  padding:1rem 0;
+}
+
+.about .row:nth-child(3){
+  padding-top: 2rem;
+}
+
+.about .row .progress{
+  flex:1 1 40rem;
+}
+
+.about .row .progress h3{
+  color:var(--black);
+  font-weight: normal;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .row .progress .bar{
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  height:2rem;
+  padding:.5rem;
+  margin:1rem 0;
+ 
+}
+
+.about .row .progress .bar span{
+  display: block;
+  height: 100%;
+  background: var(--green);
+  border-radius: 5rem;
+}
+
+.about .row .progress .bar-1-1 span{
+  width: 90%;
+}
+
+.about .row .progress .bar-1-2 span{
+  width: 75%;
+}
+
+.about .row .progress .bar-1-3 span{
+  width: 80%;
+}
+
+.about .row .progress .bar-2-1 span{
+  width: 95%;
+}
+
+.about .row .progress .bar-2-2 span{
+  width: 89%;
+}
+
+.about .row .progress .bar-2-3 span{
+  width: 65%;
+}
+@keyframes contactTransition {
+  from {
+    transform: translateX(-100%) translateY(-50%);
+  }
+  to {
+    transform: translateX(20%) translateY(-50%);
+  }
+}
+
+@keyframes contactFormTransition {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes contactFormBtn {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes contactFormInputs {
+  to {
+    transform: translateX(0);
+  }
+}
+.contact{
+  margin-left: 13rem !important;
+}
+.contact1{
+  margin-left: 13rem !important;
+ 
+ }
+ 
